@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav-mem {
+            display: inline-block;
+            margin-top: 1%
+
+        }
+
+        nav {
+            padding: 30px 20px;
+            background-color: white;
+            opacity: 0.5;
+            position: sticky;
+            top: 0px;
+        }
+
+
+        main {
+            height: 7000px;
+            width: 100%;
+            background-color:white;
+        }
+
+        a {
+            margin-left: 85%;
+            margin-top: 1px;
+            padding: 10px 45px;
+            border: 1px solid;
+            border-radius: 40px;
+            color: black;
+            background-color: white;
+            text-decoration: none;
+
+        }
+
+        #sec-1 {
+            height: 800px;
+            width: 100%;
+            background-color: white;
+            border: 1px;
+
+        }
+
+        #sec-mem1 {
+            height: 150px;
+            width: 60%;
+            border: 1px;
+            margin: auto;
+        }
+
+        #btn {
+            padding: 10px 55px;
+            border: 1px solid;
+            background-color: dodgerblue;
+            color: white;
+            display: inline-block;
+            margin-left: 43%;
+        }
+
+        #img2 {
+            margin-left: 30%;
+        }
+
+        h2 {
+            margin-left: 25%;
+        }
+
+        #h2 {
+            margin-left: 28%;
+        }
+
+        h6 {
+            margin-left: 27%;
+        }
+
+        #sec-2 {
+            height: 350px;
+            width: 100%;
+            background-color: white;
+            border: 1px;
+        }
+
+        h3 {
+            margin-left: 35%;
+        }
+
+        #sec2-mem1 {
+            height: 250px;
+            width: 45%;
+            display: inline-block;
+            border: 1px;
+            margin-left: 4%;
+
+        }
+
+        #sec2-mem2 {
+            height: 250px;
+            width: 45%;
+            display: inline-block;
+            border: 1px;
+
+
+        }
+
+        #btn2 {
+            padding: 10px 55px;
+            border: 1px solid;
+            background-color: dodgerblue;
+            color: white;
+            display: inline-block;
+            margin-left: 5px;
+        }
+
+        #sec-3 {
+            height: 800px;
+            width: 100%;
+            border: 1px;
+            background-color: white;
+        }
+
+        #p3-3 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: lighter;
+            margin-left: 35%;
+            font-size: larger;
+        }
+
+        #h2-3 {
+            margin-left: 40%;
+        }
+
+        .Grid {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 10px 10px;
+            background-color: white;
+            padding: 40px 50px;
+
+        }
+
+        .Grid>div {
+            background-color: azure;
+            text-align: center;
+
+
+        }
+
+        #btn3 {
+            padding: 10px 55px;
+            border: 1px solid;
+            background-color: dodgerblue;
+            color: white;
+            display: inline-block;
+            margin-left: 40%;
+
+        }
+
+        #sec-4 {
+            height: 500px;
+            width: 100%;
+            border: 1px;
+            background-color: white;
+        }
+
+        .sec4-mem {
+            display: inline-block;
+            height: 350px;
+            width: 45%;
+            border: 1px;
+            margin-left: 20px;
+        }
+
+        #h2-4 {
+            margin-top: 50px;
+            margin-left: 30%;
+        }
+
+        #p4 {
+            margin-left: 35%;
+        }
+
+        .sec4-div {
+            height: 70px;
+            width: 80%;
+            border: 1px;
+            margin-top: 10px;
+            text-align: left;
+            margin-left: 5px;
+            background-color: aliceblue;
+        }
+
+        .h3-4 {
+            margin-left: 2px;
+            margin-top: 2px;
+        }
+
+        #sec5 {
+            height: 350px;
+            width: 100%;
+            border: 1px;
+            background-color: white;
+        }
+
+        #p5 {
+            margin-left: 43%;
+        }
+
+        .h2-5 {
+            margin-top: 40px;
+            margin-left: 40%;
+        }
+
+        .sec5-mem {
+            height: 200px;
+            width: 35%;
+            border: 1px;
+            display: inline-block;
+            margin-left: 10%;
+        }
+
+        #btn4 {
+            padding: 10px 55px;
+            border: 1px solid;
+            background-color: dodgerblue;
+            color: white;
+            display: inline-block;
+            margin-left: 1%;
+
+        }
+
+        #h3-5 {
+            margin-left: 1px;
+        }
+
+        #sec6 {
+            height: 700px;
+            width: 100%;
+            border: 1px;
+            background-color: white;
+        }
+
+        .Grid2 {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 30px 30px;
+            background-color: white;
+            padding: 60px 60px;
+
+        }
+
+        .Grid2>div {
+            background-color: whitesmoke;
+            text-align: center;
+        }
+
+        #h2-6 {
+            margin-left: 35%;
+
+            margin-top: 40px;
+        }
+
+        #sec7 {
+            height: 600px;
+            width: 100%;
+            border: 1px;
+            background-color: white;
+        }
+
+        .Grid3 {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 30px 30px;
+            background-color: white;
+            padding: 60px 60px;
+
+        }
+
+        .Grid3>div {
+            background-color: whitesmoke;
+            text-align: center;
+        }
+
+        #h2-7 {
+            margin-left: 35%;
+            margin-top: 40px;
+        }
+
+        #sec8 {
+            height: 270px;
+            width: 100%;
+            border: 1px;
+            background-color: white;
+        }
+
+        #div {
+            height: 300px;
+            width: 550px;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        #p8 {
+            text-align: center;
+        }
+
+        #btn5 {
+            padding: 10px 55px;
+            border: 1px solid;
+            background-color: dodgerblue;
+            color: white;
+            display: inline-block;
+            margin-left: 30%;
+        }
+
+        #sec9 {
+            height: 900px;
+            width: 100%;
+            border: 1px;
+            background-color: white;
+        }
+
+        .h3-9 {
+            margin-left: 40%;
+        }
+
+        .sec9-mem {
+            height: 200px;
+            width: 30%;
+            display: inline-block;
+            border: 1px;
+
+        }
+
+        #sec9-mem1 {
+            margin-left: 20%;
+        }
+
+        #p9 {
+            font-size: 20px;
+            font-weight: lighter;
+        }
+
+        #sec9img {
+            margin-left: 40%;
+        }
+
+        #sec9-mem2 {
+            height: 300px;
+            width: 100%;
+            border: 1px;
+        }
+
+        #secp9 {
+            margin-left: 20%;
+        }
+
+        #img8 {
+            margin-left: 30%;
+        }
+
+        #sec10 {
+            height: 500px;
+            width: 100%;
+            background-color: white;
+            border: 1px;
+        }
+
+        #p10 {
+            margin-left: 30%;
+        }
+
+        #sec10div {
+            height: 250px;
+            width: 50%;
+            margin-left: 26%;
+            background-color: whitesmoke;
+            margin-top: 5%;
+        }
+
+        #btn6 {
+            padding: 10px 55px;
+            border: 1px solid;
+            background-color: dodgerblue;
+            color: white;
+            display: inline-block;
+            margin-left: 30%;
+        }
+        #sec10{
+            height: 400px;
+            width: 100%;
+            background-color: white;
+        }
+        #sec10div{
+            height: 370px;
+            width: 70%;
+            margin-left: 10%;
+        }
+        #lastimg{
+            margin-left: 10%;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <div class="nav-mem">
+                <img src="./logo.jpeg" alt="" height="100px" width="150px">
+            </div>
+            <a class="nav-mem" id="btn0">Contact us</a>
+        </nav>
+        <section id="sec-1">
+            <div id="sec-mem1">
+                <h2> Elevate Real Estage Success with</h2>
+                <h2 id="h2"> Osumare's Digital Expertise</h2>
+                <h6>Tailored Solutions for Thirving in the Digital Real Estate Landscape</h6>
+            </div>
+            <a id="btn" href="">Get Started</a>
+            <br>
+            <img src="./second img.jpeg" alt="" height="400px" width="600px" id="img2">
+        </section>
+        <section id="sec-2">
+            <h3>Real Estate-Focused Digital Mastery</h3>
+            <img src="./third img.jpeg" alt="" id="sec2-mem1" height="350px" width="400px">
+            <div id="sec2-mem2">
+                <h1>Unlock the Potential of Digital Real </h1>
+                <h1 id="h1-1">Estate Excellence</h1>
+                <p>At Osumare, we understand that the real estate landscape demands a digital presence that aligns with
+                    the intricacies of property marketing. Our range of specialized services is meticulously designed to
+                    catapult your brand's success in the ever-evolving digital property market.</p>
+                <a href="" id="btn2">Get Started</a>
+            </div>
+        </section>
+        <section id="sec-3">
+            <h2 id="h2-3"> Our Service offerings</h2>
+            <p id="p3-3"> Strategies that Drive Property Market Excellence</p>
+            <div class="Grid">
+                <div class="item1">
+                    <img src="./grid1.jpeg" alt="" height="50px" width="50px">
+                    <h2>Automotive SEO</h2>
+                    Drive Your Sucess with Automotive SEO:Ignite Visibility and Outrace the Competition Acclerate Your
+                    business Growth Today.
+                </div>
+                <div class="item2">
+                    <img src="./grid2.jpeg" alt="" height="50px" width="50px">
+                    <h2>PPC Precision</h2>
+                    Maximize Visibility and drive quality traffic with meticulously targeted Pay-Per-Click campaigns
+                </div>
+                <div class="item3">
+                    <img src="./grid3.jpeg" alt="" height="50px" width="50px">
+                    <h2>Social Acceleration</h2>
+                    Engage and influence your audience across social media platforms,amplifying your brand's presence
+                    and connection
+                </div>
+                <div class="item4">
+                    <img src="./grid4.jpeg" alt="" height="50px" width="50px">
+                    <h2>Content Excellence</h2>
+                    Craft compelling,automotive-specific content that resonates with entusiasts and drives engagement
+                </div>
+                <div class="item5">
+                    <img src="./grid5.jpeg" alt="" height="50px" width="50px">
+                    <h2>Web Design</h2>
+                    Transform visitors into customers with high-performance websites designed for seamless user
+                    experiences and increased conversions
+                </div>
+                <div class="item6">
+                    <img src="./grid6.jpeg" alt="" height="50px" width="50px">
+                    <h2>Data-Driven Insights</h2>
+                    Leverage data to refine your Strategies,making informed decisions that drive revenue growth
+                </div>
+                <div class="item7">
+                    <img src="./grid7.jpeg" alt="" height="50px" width="50px">
+                    <h2>End-to-End Solutions</h2>
+                    From initial,awarness to post-purchase loyalty,we offer full-funnel solutions that guide customers
+                    through every step of their journey
+                </div>
+                <div class="item8">
+                    <img src="./grid8.jpeg" alt="" height="50px" width="50px">
+                    <h2>Video marketing</h2>
+                    Unleash the power of Video Marketings:
+                    Captivate ,Engage,and Elevate Your Brand with Compelling Visual Stories
+                </div>
+
+            </div>
+            <a href="" id="btn3">Get Started</a>
+
+        </section>
+        <section id="sec-4">
+            <div>
+                <h2 id="h2-4">Navigating Real Estate's Digital Landscape</h2>
+                <p id="p4">Insights for Real Estate Marketing Advantage</p>
+            </div>
+            <div class="sec4-mem">
+                <div class="sec4-div">
+                    <h3 class="h3-4">Market Trends Analysis</h3>
+                    <p>Predictive insights to guide real estate strategies</p>
+                </div>
+                <div class="sec4-div">
+                    <h3 class="h3-4">Targeted Buyer Persona</h3>
+                    <p>understand and connect with your ideal property buyers</p>
+                </div>
+                <div class="sec4-div">
+                    <h3 class="h3-4">Competitor Insights</h3>
+                    <p>Stand out in a property with informed strategies</p>
+                </div>
+                <div class="sec4-div">
+                    <h3 class="h3-4">Visual Content Appeal</h3>
+                    <p>Capativate buyers with appealing visuals and immersive experiences</p>
+                </div>
+            </div>
+            <img src="./fourth img.jpeg" alt="" class="sec4-mem" height="600px" width="450px">
+        </section>
+        <section id="sec5">
+            <div>
+                <h2 class="h2-5">Driving Property Inquiries to Conversions</h2>
+                <p id="p5">Streamlined Strategies for Real Estate Success</p>
+            </div>
+            <img src="./fifth img.jpeg" alt="" class="sec5-mem" height="600px " width="300px">
+            <div class="sec5-mem">
+                <h3 id="h3-5">Optimized Path to Property Purchase</h3>
+                <p>In the dynamic realm of real estate,the journey from a propert inquiry to a successful conversion
+                    demands a well-created approach.At Osumare,we specialize in guiding potential buyers through this
+                    journey seamlessly.maximizing inquiries-turned -conversions with expert strategies</p>
+                <a href="" id="btn4">Get Started</a>
+            </div>
+        </section>
+        <section id="sec6">
+            <h2 id="h2-6">Driving Property Inquiries to Conversions</h2>
+            <div class="Grid2">
+                <div id="item1">
+                    <img src="./grid1.1.jpeg" alt="" height="150px" width="150px">
+                    <h4>Call-to-Action Optimization</h4>
+                    Our carefully crafted CTAs guide potential buyers through the property journey,enhancing engagement
+                    and conversion rates.
+                </div>
+                <div id="item2">
+                    <img src="./grid1.2.jpeg" alt="" height="150px" width="150px">
+                    <h4>Landing Page Efficiency</h4>
+                    Tailored landing pages are designed for maximum property lead coversion.They providenseamless user
+                    experiences and clear pathways for inquiry submission
+                </div>
+                <div id="item3">
+                    <img src="./grid1.3.jpeg" alt="" height="150px" width="150px">
+                    <h4>Social Proof Utilization</h4>
+                    Leverage the power of testimonials and success stories from statisfied buyers tp build trust abd
+                    creadibility,encouraging hesitant prospects to take action
+                </div>
+                <div id="item4">
+                    <img src="./grid1.4.jpeg" alt="" height="150px" width="150px">
+                    <h4>Mobile Friendly Experience</h4>
+                    with a responsive design approach our Strategies ensure a seamless browsing experience across all
+                    devices.This responsiveness enhances enagagement and conversions by accommodating the preferences of
+                    on the go property seekers
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="sec7">
+            <h2 id="h2-7">Our Expertise in Action</h2>
+            <div class="Grid3">
+                <div id="item1">
+                    <img src="./grid2.1.jpeg" alt="" height="100px" width="100px">
+                    <h4>Effective CTAs</h4>
+                    See how our strategic CTAs drove a significant increse in property inquiries and acclerated sales
+                    for a real state agency
+                </div>
+                <div id="item2">
+                    <img src="./grid2.2.jpeg" alt="" height="100px" width="100px">
+                    <h4>Conversions-Optimized Landing Paages</h4>
+                    Explore a case study where our landing page optimization increased property lead conversion rates by
+                    30%
+                </div>
+                <div id="item3">
+                    <img src="./grid2.3.jpeg" alt="" height="100px" width="100px">
+                    <h4>Trust Building with social Proof</h4>
+                    Discover how leveraging client testimonials boosted buyer confidence, leading to higher conversion
+                    rates for a property development project
+                </div>
+                <div id="item4">
+                    <img src="./grid2.4.jpeg" alt="" height="100px" width="100px">
+                    <h4>Mobile -First Success</h4>
+                    Learn how our mobile-responsive design approach resulted in a 25% increase in inquiries from mobile
+                    users for a real estate agency.
+                </div>
+            </div>
+        </section>
+        <section id="sec8">
+            <div id="div">
+                <h3>Your Peace of Mind</h3>
+                <p id="p8">Through our conversion-focused strategies, we ensure that property seekers are not just
+                    visitors, but
+                    engaged prospects ready to make their next move in the real estate market</p>
+                <a href="" id="btn5">Get Started</a>
+            </div>
+        </section>
+        <section id="sec9">
+            <h3 class="h3-9">What Our Pharma Partner Say</h3>
+            <p class="h3-9">Driving Transformation One Brand at a Time</p>
+            <img src="./six img.jpeg" alt="" class="sec9-mem" id="sec9-mem1" height="250px" width="250px">
+            <div class="sec9-mem">
+                <img src="" alt="" height="100px" width="100px">
+                <h6> </h6>
+        
+                <p id="p9">Osumare's expertise in pharma marketing is unparalleled. Their strategies helped us navigate
+                    complex
+                    regulations while driving remarkable growth.</p>
+            </div>
+            <img src="./sev img.jpeg" alt="" height="100px" width="100px" id="sec9img">
+            <div id="sec9-mem2">
+                <h3>Frequently Asked Questions</h3>
+                <p id="secp9">Pinpoint your audience with precision, ensuring your marketing efforts reach those most
+                    likely to
+                    engage with your brand.</p>
+                <img src="./eight img.jpeg" alt="" height="270px" width="450px" id="img8">
+            </div>
+        </section>
+
+        <section id="sec10">
+            <h3>Connect with Our Digital Marketing Experts</h3>
+            <p id="p10">Reach Out for Tailored Strategies and Results-Driven Solutions. Let's Elevate Your Online
+                Presence Together</p>
+
+            <div id="sec10div">
+                <label for="">Name</label>
+                <br>
+                <br>
+                <input type="text" name="" id="" placeholder="Enter Your Name">
+                <br>
+                <br>
+                <label for="">Phone</label>
+                <br>
+                <br>
+                <input type="number" name="" id="" placeholder="Enter Your Number">
+                <br>
+                <br>
+                <label for="">Email</label>
+                <br>
+                <br>
+                <input type="email" name="" id="" placeholder="Enter your Total no of Vechiles">
+                <br>
+                <br>
+                <a href="" id="btn6">Get Started</a>
+            </div>
+        </section>
+        <section id="sec10">
+            <div id="sec10div">
+              <img src="./last.jpeg" alt="" height="360px" width="80%" id="lastimg">
+              <h6>© 2023 Osumare. All rights reserved.</h6>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>-
